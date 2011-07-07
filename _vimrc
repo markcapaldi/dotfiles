@@ -1,4 +1,4 @@
-" https://github.com/garybernhardt/dotfilesa
+" https://github.com/garybernhardt/dotfiles
 function! RenameFile()
     let old_name = expand('%')
     let new_name = input('New file name: ', expand('%'))
