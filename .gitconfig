@@ -1,0 +1,46 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[user]
+	name = Mark Capaldi
+	email = mc@heritageit.co.uk
+[alias]
+	fo = fetch origin
+	st = status
+	mom = merge origin/master
+	pom = push origin master
+	wcom = whatchanged origin/master..HEAD
+	shit = reset --hard origin/master
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	cmd = \"c:/Program Files (x86)/Beyond Compare 3/bcomp.com\" \"$PWD/$LOCAL\" \"$PWD/$REMOTE\" \"$PWD/$BASE\" \"$PWD/$MERGED\"
+	keepBackup = false
+	trustExitCode = false
+[diff]
+	tool = bc3
+	guitool = beyondcompare3
+[difftool "bc3"]
+	cmd = \"c:/Program Files (x86)/Beyond Compare 3/bcomp.com\" \"$LOCAL\" \"$REMOTE\"
+[difftool "beyondcompare3"]
+	path = "C:/Program Files (x86)/Beyond Compare 3/BCompare.exe"
