@@ -1,5 +1,4 @@
 *ntuser*
-*NTUSER*
 /.BuildServer
 /.gem
 /.git
@@ -8,28 +7,38 @@
 /.MPS15
 /.PyCharm10
 /.RubyMine31
+/.Trash
 /.WebIde10
 /.ssh
 /.subversion
 /AppData
+/Applications
 /Contacts
 /Desktop
 /Documents
 /Downloads
 /Dropbox
 /Favorites
+/Library
 /Links
+/Movies
 /MPSSamples.1.5
 /Music
 /Pictures
+/Public
 /PycharmProjects
 /RubymineProjects
 /Saved Games
 /Searches
+/Sites
+/USB Backup
 /Videos
+/win7
 
 .bash_history
+.CFUserTextEncoding
 _viminfo
+.viminfo
 
 *.swp
 *.vim
