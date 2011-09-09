@@ -4,6 +4,6 @@ alias push='git push origin master'
 alias a='git add'
 alias cm='git commit -m '
 
-set -o vi
+set keymap vi
 
 cd /c/td/
