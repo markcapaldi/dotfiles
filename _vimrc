@@ -8,6 +8,7 @@ function! RenameFile()
         redraw!
     endif
 endfunction
+
 map <leader>n :call RenameFile()<cr>
  
 " http://www.viemu.com/blog/2009/06/16/a-vim-and-viemu-mapping-you-really-cant-miss-never-type-noh-again/
