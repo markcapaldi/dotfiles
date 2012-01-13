@@ -44,3 +44,4 @@
 	cmd = \"c:/Program Files (x86)/Beyond Compare 3/bcomp.com\" \"$LOCAL\" \"$REMOTE\"
 [difftool "beyondcompare3"]
 	path = "C:/Program Files (x86)/Beyond Compare 3/BCompare.exe"
+
