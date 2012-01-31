@@ -27,7 +27,10 @@ set hlsearch
 " John Lam's .vimrc file
  
 " Start maximized
-au GUIEnter * simalt ~x
+"au GUIEnter * simalt ~x
+"
+"http://vim.wikia.com/wiki/Maximize_or_set_initial_window_size
+set lines=999 columns=999
  
 " Use CUA keystrokes for clipboard: CTRL-X, CTRL-C, CTRL-V and CTRL-z
 source $VIMRUNTIME/mswin.vim
