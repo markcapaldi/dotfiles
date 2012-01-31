@@ -1,4 +1,9 @@
 " https://github.com/garybernhardt/dotfiles
+" Map ,e and ,v to open files in the same directory as the current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+
 function! RenameFile()
     let old_name = expand('%')
     let new_name = input('New file name: ', expand('%'))
@@ -10,7 +15,7 @@ function! RenameFile()
 endfunction
 
 map <leader>n :call RenameFile()<cr>
- 
+
 " http://www.viemu.com/blog/2009/06/16/a-vim-and-viemu-mapping-you-really-cant-miss-never-type-noh-again/
 :nnoremap <esc> :noh<return><esc>
  
