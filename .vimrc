@@ -1,3 +1,6 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 " https://github.com/garybernhardt/dotfiles
 " Map ,e and ,v to open files in the same directory as the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
