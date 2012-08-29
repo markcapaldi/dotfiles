@@ -22,9 +22,6 @@ map <leader>n :call RenameFile()<cr>
 " http://www.viemu.com/blog/2009/06/16/a-vim-and-viemu-mapping-you-really-cant-miss-never-type-noh-again/
 :nnoremap <esc> :noh<return><esc>
  
-" Use the Windows clipboard
-set clipboard=unnamed
- 
 " Highlight VB .NET syntax
 " http://www.vim.org/scripts/script.php?script_id=1525
 autocmd BufNewFile,BufRead *.vb set ft=vbnet
