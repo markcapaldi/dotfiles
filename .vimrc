@@ -21,10 +21,10 @@ map <leader>n :call RenameFile()<cr>
 
 " http://www.viemu.com/blog/2009/06/16/a-vim-and-viemu-mapping-you-really-cant-miss-never-type-noh-again/
 :nnoremap <esc> :noh<return><esc>
- 
+   
 " Use the Windows clipboard
 set clipboard=unnamed
- 
+	  	
 " Highlight VB .NET syntax
 " http://www.vim.org/scripts/script.php?script_id=1525
 autocmd BufNewFile,BufRead *.vb set ft=vbnet
@@ -39,9 +39,6 @@ set hlsearch
 "
 "http://vim.wikia.com/wiki/Maximize_or_set_initial_window_size
 set lines=999 columns=999
- 
-" Use CUA keystrokes for clipboard: CTRL-X, CTRL-C, CTRL-V and CTRL-z
-source $VIMRUNTIME/mswin.vim
  
 syntax on
 set nocompatible
@@ -91,34 +88,6 @@ highlight Statement guifg=#FF6600 gui=NONE
 highlight String guifg=#66FF00
 highlight Search guibg=White
  
-function RubyEndToken ()
-  let current_line = getline( '.' )
-  let braces_at_end = '{\s*\(|\(,\|\s\|\w\)*|\s*\)\?$'
-  let stuff_without_do = '^\s*\(class\|if\|unless\|begin\|case\|for\|module\|while\|until\|def\)'
-  let with_do = 'do\s*\(|\(,\|\s\|\w\)*|\s*\)\?$'
- 
-  if match(current_line, braces_at_end) >= 0
-    return "\<CR>}\<C-O>O"
-  elseif match(current_line, stuff_without_do) >= 0
-    return "\<CR>end\<C-O>O"
-  elseif match(current_line, with_do) >= 0
-    return "\<CR>end\<C-O>O"
-  else
-    return "\<CR>"
-  endif
-endfunction
- 
-function UseRubyIndent ()
-  setlocal tabstop=8
-  setlocal softtabstop=2
-  setlocal shiftwidth=2
-  setlocal expandtab
- 
-  imap <buffer> <CR> <C-R>=RubyEndToken()<CR>
-endfunction
- 
-autocmd FileType ruby,eruby call UseRubyIndent()
- 
 map ,# :s/^/#/<CR>
 map <M-]> :tabnext<CR>
 map <M-[> :tabprevious<CR>
@@ -126,3 +95,13 @@ map <M-t> :tabnew<CR>
 imap <M-]> :tabnext<CR>
 imap <M-[> :tabprevious<CR>
 imap <M-t> :tabnew<CR>
+
+" Disable the arrow keys
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>

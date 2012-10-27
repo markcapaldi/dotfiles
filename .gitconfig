@@ -32,16 +32,12 @@
 	wcom = whatchanged origin/master..HEAD
 	shit = reset --hard origin/master
 [merge]
-	tool = bc3
-[mergetool "bc3"]
+	tool = bcom3
+[mergetool "bcom3"]
 	cmd = \"c:/Program Files (x86)/Beyond Compare 3/bcomp.com\" \"$PWD/$LOCAL\" \"$PWD/$REMOTE\" \"$PWD/$BASE\" \"$PWD/$MERGED\"
 	keepBackup = false
 	trustExitCode = false
 [diff]
-	tool = bc3
-	guitool = beyondcompare3
-[difftool "bc3"]
+	tool = bcom3
+[difftool "bcom3"]
 	cmd = \"c:/Program Files (x86)/Beyond Compare 3/bcomp.com\" \"$LOCAL\" \"$REMOTE\"
-[difftool "beyondcompare3"]
-	path = "C:/Program Files (x86)/Beyond Compare 3/BCompare.exe"
-
