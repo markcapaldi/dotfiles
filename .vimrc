@@ -42,9 +42,6 @@ autocmd BufNewFile,BufRead *.config set ft=xml
 " Set search highlighting on
 set hlsearch
  
-" Start maximized in Windows
-au GUIEnter * simalt ~x
- 
 syntax on
 set nocompatible
 filetype on
@@ -73,6 +70,9 @@ set guioptions-=T
 set nu
  
 if has("win32")
+    " Start maximized in Windows
+    au GUIEnter * simalt ~x
+ 
     " Consolas 15 point, ansi character set
     set guifont=Consolas:h12:cANSI
 elseif has("mac")
