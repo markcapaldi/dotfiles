@@ -1,6 +1,10 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
  
+syntax enable
+set background=dark
+colorscheme solarized
+
 " https://github.com/garybernhardt/dotfiles
 " Map ,e and ,v to open files in the same directory as the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -68,8 +72,14 @@ set guioptions-=T
 " Switch line numbering on
 set nu
  
-" Consolas 15 point, ansi character set
-set guifont=Consolas:h12:cANSI
+if has("win32")
+    " Consolas 15 point, ansi character set
+    set guifont=Consolas:h12:cANSI
+elseif has("mac")
+    " Menlo 15 point, ansi character set
+    set guifont=Menlo\ Regular:h12
+endif
+
  
 " Disable the arrow keys
 noremap <Up> <NOP>
