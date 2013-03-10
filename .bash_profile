@@ -5,3 +5,4 @@ alias a='git add'
 alias cm='git commit -m '
 
 set -o vi
+set completion-ignore-case on
