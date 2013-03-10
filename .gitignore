@@ -39,6 +39,7 @@
 .CFUserTextEncoding
 _viminfo
 .viminfo
+/autoload/*.vim
 
 *.swp
 .DS_Store
