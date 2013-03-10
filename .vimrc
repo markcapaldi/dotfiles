@@ -52,13 +52,13 @@ set ignorecase smartcase
 set nowrap
  
 " Use two space tabs
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set noexpandtab
  
 " Setup 80 column word wrap
 set linebreak
-set textwidth=76
+set textwidth=80
  
 " No menus and no toolbar
 set guioptions-=m 
