@@ -41,4 +41,4 @@ _viminfo
 .viminfo
 
 *.swp
-
+.DS_Store
