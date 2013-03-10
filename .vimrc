@@ -56,11 +56,11 @@ set nowrap
 " Use four space tabs
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab
  
-" Setup 80 column word wrap
+" Setup 76 column word wrap
 set linebreak
-set textwidth=80
+set textwidth=76
  
 " No menus and no toolbar
 set guioptions-=m
