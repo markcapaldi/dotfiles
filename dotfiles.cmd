@@ -1,3 +1,7 @@
+cd %HOMEPATH%
+
+git clone git@github.com:markcapaldi/dotfiles.git
+
 pushd \dotfiles
 
 mklink /h "%HOME%"\.bash_profile .bash_profile
@@ -10,7 +14,6 @@ mklink /h "%HOME%"\TestNamingMode.ahk TestNamingMode.ahk
 mklink /h "%HOME%"\testnamingmode_16.ico testnamingmode_16.ico
 mklink /h "%HOME%"\testnamingmode_disabled_16.ico testnamingmode_disabled_16.ico
 
-mklink /j "%HOME%"\vimfiles\bundle .\.vim\bundle
-mklink /j "%HOME%"\vimfiles\autoload .\.vim\autoload
+mklink /j "%HOME%"\vimfiles .\.vim
 
 popd
