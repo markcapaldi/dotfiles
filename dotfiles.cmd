@@ -1,7 +1,3 @@
-cd %HOMEPATH%
-
-git clone git@github.com:markcapaldi/dotfiles.git
-
 pushd \dotfiles
 
 mklink /h "%HOME%"\.bash_profile .bash_profile

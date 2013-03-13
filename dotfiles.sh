@@ -1,7 +1,4 @@
 #!/bin/bash
-cd ~
-
-git clone git@github.com:markcapaldi/dotfiles.git
 cd dotfiles
 
 ln -s -f ~/dotfiles/.bash_profile ~/.bash_profile
