@@ -1,5 +1,5 @@
 #!/bin/bash
-cd dotfiles
+cd ~/dotfiles
 
 ln -s -f ~/dotfiles/.bash_profile ~/.bash_profile
 ln -s -F ~/dotfiles/.vim ~/.vim
