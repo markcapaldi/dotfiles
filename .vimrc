@@ -68,7 +68,10 @@ set guioptions-=T
  
 " Switch line numbering on
 set nu
- 
+
+" Allow modifications in hidden buffers (Practical Vim, tip 38)
+set hidden
+
 if has("win32")
     " Start maximized in Windows
     au GUIEnter * simalt ~x
