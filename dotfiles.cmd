@@ -10,6 +10,7 @@ mklink /h "%HOMEDRIVE%%HOMEPATH%"\TestNamingMode.ahk TestNamingMode.ahk
 mklink /h "%HOMEDRIVE%%HOMEPATH%"\testnamingmode_16.ico testnamingmode_16.ico
 mklink /h "%HOMEDRIVE%%HOMEPATH%"\testnamingmode_disabled_16.ico testnamingmode_disabled_16.ico
 
+mklink /j "%HOMEDRIVE%%HOMEPATH%"\vimfiles .\.vim
 mklink /j "%HOMEDRIVE%%HOMEPATH%"\.vim .\.vim
 
 popd
