@@ -9,3 +9,5 @@ export PATH=$PATH:/c/Program\ Files\ \(x86\)/vim/vim74
 
 set -o vi
 set completion-ignore-case on
+
+# demo for lorne
