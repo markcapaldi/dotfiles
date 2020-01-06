@@ -13,3 +13,8 @@ set -o vi
 set completion-ignore-case on
 
 # demo for lorne
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_DEFAULT_REGION="eu-west-2"
