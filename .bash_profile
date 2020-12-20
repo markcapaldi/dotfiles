@@ -13,6 +13,7 @@ set -o vi
 set completion-ignore-case on
 
 # demo for lorne
+<<<<<<< HEAD
 eval $(/usr/libexec/path_helper -s)
 
 export PATH=$PATH:/Users/mark/bin
@@ -27,3 +28,8 @@ export PATH
 # Add the path to MacVim to the PATH environment variable
 PATH="/Applications/MacVim.app/Contents/bin:${PATH}"
 export PATH
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_DEFAULT_REGION="eu-west-2"
