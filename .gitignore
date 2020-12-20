@@ -36,10 +36,12 @@
 /win7
 
 .bash_history
+.bash_profile.backup
 .CFUserTextEncoding
 _viminfo
 .viminfo
 /autoload/*.vim
+**/.netrwhist
 
 *.swp
 .DS_Store

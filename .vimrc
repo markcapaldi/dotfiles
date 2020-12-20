@@ -1,6 +1,6 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
- 
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
+"call pathogen#infect()
+
 syntax enable
 set background=dark
 colorscheme solarized
@@ -24,12 +24,13 @@ endfunction
 map <leader>n :call RenameFile()<cr>
  
 " http://www.viemu.com/blog/2009/06/16/a-vim-and-viemu-mapping-you-really-cant-miss-never-type-noh-again/
+" This line is causing Vim to open in Replace mode in the Terminal app on Mac OS
 :nnoremap <esc> :noh<return><esc>
  
 " Weird backspace fix http://linux-journal.blogspot.co.uk/2005/04/fix-vim-backspace-doesnt-work.html
 set backspace=2
  
-" Use Windows clipboard
+" Use system clipboard
 set clipboard=unnamed
  
 " Syntax highlighting

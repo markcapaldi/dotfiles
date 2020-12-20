@@ -13,3 +13,17 @@ set -o vi
 set completion-ignore-case on
 
 # demo for lorne
+eval $(/usr/libexec/path_helper -s)
+
+export PATH=$PATH:/Users/mark/bin
+
+source '/Users/mark/lib/azure-cli/az.completion'
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+
+# Add the path to MacVim to the PATH environment variable
+PATH="/Applications/MacVim.app/Contents/bin:${PATH}"
+export PATH
