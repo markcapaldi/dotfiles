@@ -13,7 +13,6 @@ set -o vi
 set completion-ignore-case on
 
 # demo for lorne
-<<<<<<< HEAD
 eval $(/usr/libexec/path_helper -s)
 
 export PATH=$PATH:/Users/mark/bin
