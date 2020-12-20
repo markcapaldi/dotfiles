@@ -6,3 +6,6 @@ ln -s -f ~/dotfiles/.gitconfig ~/.gitconfig
 
 git submodule init
 git submodule update
+
+mkdir -p ~/.vim/colors
+cp -u  ~/dotfiles/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
