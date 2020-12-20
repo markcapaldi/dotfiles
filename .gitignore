@@ -42,6 +42,7 @@ _viminfo
 .viminfo
 /autoload/*.vim
 **/.netrwhist
+.vim/colors/
 
 *.swp
 .DS_Store
