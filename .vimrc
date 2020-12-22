@@ -90,9 +90,3 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-
-" Temporary abbreviations
-iab inc <p class="incoming"></p>
-iab imsg <p class="imessage"></p>
-iab dt <h1 class="datetime"></h1>
-iab sms <p class="sms"></p>
