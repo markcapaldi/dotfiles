@@ -6,6 +6,7 @@
 	symlinks = false
 	ignorecase = true
 	hideDotFiles = dotGitOnly
+	autocrlf = input
 [color]
 	ui = auto
 [color "branch"]

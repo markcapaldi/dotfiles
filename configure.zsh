@@ -8,5 +8,5 @@ echo "alias a='git add'" >> ~/.zshrc
 echo "alias cm='git commit -m '" >> ~/.zshrc
 
 echo "export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -g -f '" >> ~/.zshrc
-echo "export PATH='${PATH}:/Applications/MacVim.app/Contents/bin:/opt/apache-maven-3.3.9/bin:~/code/depot_tools'" >> ~/.zshrc
+echo "export PATH='${PATH}:/Applications/MacVim.app/Contents/bin:/usr/local/share/dotnet:/opt/homebrew/bin:/opt/nvim/bin:/opt/apache-maven-3.3.9/bin:~/code/depot_tools'" >> ~/.zshrc
 echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.zshrc
